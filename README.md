@@ -1,15 +1,15 @@
-#Algorithmic Trading
+# Algorithmic Trading
 
 I created 4 algorithmic trading models and looked for the one with the best performance. 
 
-##Data
+## Data
 4,323 price observations of the iShares Currency Hedged MSCI Emerging Markets ETF that start in January 2015 and end January 2021. 
 
 Regressors = two moving average prices. 
 
 Independent variable = 1 if the return is >= 0 ; -1 if the return is < 0 
 
-##Baseline Model
+## Baseline Model
 
 Model = support vector machine (SVM) learning method, support vector classification (SVC)
 
@@ -23,7 +23,7 @@ The baseline model did pretty well with a return over the test period close to 5
 
 <p align='center'> <img src='images/strategy_1.jpg'></p>
 
-##Alternative 1
+## Alternative 1
 
 Same as baseline model except:
 Traning = first 12 months
@@ -32,7 +32,7 @@ In this model all the predicted values are 1 i.e. buy or hold. Thus, the strateg
 
 <p align='center'> <img src='images/strategy_a1.jpg'></p>
 
-##Alternative 2
+## Alternative 2
 
 Same as baseline model except:
 Short moving average window = 100
@@ -42,7 +42,7 @@ In this model most of the predicted values were -1 so the strategy comulative re
 
 <p align='center'> <img src='images/strategy_a2.jpg'></p>
 
-##Alternative 3
+## Alternative 3
 
 Same as baseline except:
 Model =  tree.DecisionTreeClassifier()
@@ -51,6 +51,6 @@ In this model most of the predicted values were -1 so the strategy comulative re
 
 <p align='center'> <img src='images/strategy_tree.jpg'></p>
 
-##Conclusion
+## Conclusion
 
 The best performing model is the baseline. 
