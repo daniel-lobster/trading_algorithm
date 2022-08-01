@@ -17,7 +17,7 @@ Short moving average window = 4
 
 Long moving average window = 100
 
-Traning = first 3 months of the dataset
+Training = first 3 months of the dataset
 
 The baseline model did pretty well with a return over the test period close to 50%. While the passive strategy (i.e. just holding the asset over the test period) had a return of about 40%. 
 
@@ -26,7 +26,7 @@ The baseline model did pretty well with a return over the test period close to 5
 ## Alternative 1
 
 Same as baseline model except:
-Traning = first 12 months
+Training = first 12 months
 
 In this model all the predicted values are 1 i.e. buy or hold. Thus, the strategy is the same as just holding the asset through the testing period. 
 
